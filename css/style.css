@@ -28,7 +28,9 @@ p {
 }
 
 img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 *,
@@ -72,8 +74,6 @@ img {
 /* ------------------HEADER-------------------- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -111,6 +111,7 @@ img {
 }
 
 .header-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -129,6 +130,8 @@ img {
 
 .header-tel-link,
 .header-mail-link {
+  display: flex;
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -153,9 +156,7 @@ img {
 }
 
 .after-header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -172,6 +173,7 @@ img {
 }
 
 .after-header-title {
+  margin: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -235,10 +237,12 @@ img {
 
 /* ------------------HERO-------------------- */
 
+.hero {
+  padding-top: 0;
+}
+
 .hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .hero-list {
@@ -264,9 +268,7 @@ img {
 }
 
 .team-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .team-list {
@@ -288,6 +290,11 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-text-container {
+  padding-top: 30px;
+  text-align: center;
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -301,7 +308,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-top: 30px;
 }
 
 .team-item-text {
@@ -325,16 +331,14 @@ img {
 }
 
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
-}
-
-.footer-adress-container {
-  margin-top: 20px;
 }
 
 .footer-item:not(:last-child) {
@@ -431,6 +435,5 @@ img {
 }
 
 .portfolio-grid-container {
-  text-align: center;
-  margin: 20px 0;
+  padding: 20px 24px;
 }
