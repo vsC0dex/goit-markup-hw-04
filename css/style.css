@@ -469,14 +469,17 @@ img {
 /* ------------------FOOTER-------------------- */
 .footer {
   background-color: var(--primary-background-color);
-  max-height: 252px;
+}
+
+.footer-main-container {
   display: flex;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  padding: 60px 0 60px 215px;
+  margin-right: 70px;
 }
 
 .footer-list {
@@ -498,7 +501,7 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-adress-link {
+.footer-address-link {
   font-size: 14px;
   line-height: 1.72;
   letter-spacing: 0.03em;
@@ -517,17 +520,9 @@ img {
 .footer-mail-link:hover,
 .footer-tel-link:focus,
 .footer-mail-link:focus,
-.footer-adress-link:hover,
-.footer-adress-link:focus {
+.footer-address-link:hover,
+.footer-address-link:focus {
   color: var(--accent-color);
-}
-
-.footer-second-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 72px 878px 100px 0;
 }
 
 .footer-second-text {
