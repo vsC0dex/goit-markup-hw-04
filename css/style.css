@@ -473,13 +473,12 @@ img {
 
 .footer-main-container {
   display: flex;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-container {
   margin-right: 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-list {
@@ -523,6 +522,11 @@ img {
 .footer-address-link:hover,
 .footer-address-link:focus {
   color: var(--accent-color);
+}
+
+.footer-second-container {
+  padding-top: 72px;
+  padding-bottom: 100px;
 }
 
 .footer-second-text {
